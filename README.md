@@ -197,3 +197,4 @@ When discussing this in Staff-level interviews, frame it as:
 - [ ] Refinance break-even calculator
 - [ ] Real lender application links (affiliate revenue model)
 - [ ] Historical rate context ("rates are currently X% above the 10yr average")
+
