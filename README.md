@@ -46,6 +46,16 @@ mortgage-dashboard/
 
 ---
 
+## Screenshots
+
+![MortgageIQ Dashboard - Main View](screenshots/image1.png)
+*Interactive mortgage rate comparison with real-time lender rankings and AI advisor*
+
+![MortgageIQ Dashboard - Rates & Scenarios](screenshots/image2.png)
+*Rate history chart and loan scenario comparisons*
+
+---
+
 ## Connecting Real Data Sources (Production Upgrade)
 
 ### 1. FRED API (Free — National Rate Averages)
