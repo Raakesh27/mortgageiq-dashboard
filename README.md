@@ -172,29 +172,5 @@ async def ask_advisor(payload: dict):
 | AI | Claude API (Anthropic) | Natural language mortgage Q&A |
 | Backend (prod) | FastAPI + Redis | API key security, rate caching |
 
----
 
-## Portfolio / Interview Talking Points
-
-When discussing this in Staff-level interviews, frame it as:
-
-1. **System design** — "I built a real-time data aggregation pipeline pulling from 2 external APIs, normalized heterogeneous schemas, cached with TTL to stay under API rate limits, and served it through a typed REST API"
-
-2. **AI integration** — "The LLM layer uses RAG-lite: I inject the user's current rate context into the system prompt so the model gives personalized, grounded answers rather than generic mortgage advice"
-
-3. **Scalability trade-offs** — "For rate data, I chose a read-heavy caching strategy (Redis, 24h TTL) because accuracy within 24h is sufficient for the use case and it saves ~$0/month in API costs vs. live fetching"
-
-4. **Product thinking** — "The hardest part wasn't the code — it was deciding what not to show. I removed 6 features from v1 because they added complexity without helping the core user goal: finding the lowest rate for their specific situation"
-
----
-
-## Next Steps (v2 Ideas)
-
-- [ ] ZIP code → state/county mapping for local rate adjustments
-- [ ] Saved scenarios with localStorage persistence
-- [ ] Email/SMS rate alerts when rates drop below threshold
-- [ ] Affordability calculator (salary → max home price)
-- [ ] Refinance break-even calculator
-- [ ] Real lender application links (affiliate revenue model)
-- [ ] Historical rate context ("rates are currently X% above the 10yr average")
 
